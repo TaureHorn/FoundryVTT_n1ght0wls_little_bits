@@ -1,0 +1,106 @@
+/* actual color variables set in CustomCSS module */
+
+/* 
+ * =====================================================
+ *                   DIALOGS 
+ * =====================================================
+*/
+
+.nlb-dialog {
+	border: 2px solid var(--nlb-lo);
+	border-radius: var(--nlb-rad);
+	box-shadow: 0px 0px 5px var(--nlb-lo);
+}
+
+.nlb-dialog,
+.nlb-dialog .window-content {
+	background-color: var(--nlb-hi);
+	background-image: none;
+	border-radius: var(--nlb-rad);
+	color: var(--nlb-lo);
+}
+
+.nlb-dialog button,
+.nlb-dialog input,
+.nlb-dialog select {
+	background: none;
+	border: 2px solid var(--nlb-lo) !important;
+	border-radius: var(--nlb-rad);
+	color: var(--nlb-lo) !important;
+	font-weight: bold;
+	margin-top: 0.5em !important;
+}
+
+.nlb-dialog input::placeholder {
+	color: var(--nlb-mid);
+}
+
+.nlb-dialog .window-header {
+	border-bottom: 2px solid var(--nlb-lo);
+}
+
+.nlb-dialog button:hover,
+.nlb-dialog input:hover,
+.nlb-dialog select:hover {
+	background-color: var(--nlb-lo) !important;
+	color: var(--nlb-hi) !important;
+}
+
+.nlb-dialog button:active,
+.nlb-dialog input:active,
+.nlb-dialog select:active {
+	background-color: var(--nlb-mid) !important;
+	color: var(--nlb-hi) !important;
+}
+
+/* 
+ * =====================================================
+ *                  JOURNAL
+ * =====================================================
+*/
+
+a.content-link {
+	background-color: var(--nlb-hi-grey);
+	color: var(--nlb-lo-grey);
+}
+
+.sheet.journal-entry,
+.journal-entry-content,
+.journal-header > .title {
+	background: var(--nlb-lo) !important;
+	border: 1px solid var(--nlb-mid-grey) !important;
+	color: var(--nlb-mid-grey) !important
+}
+
+.journal-hero-img {
+	border:none !important;
+	display:block !important;
+	margin:auto !important;
+}
+
+.journal-hero-images {
+	display: flex;
+	gap: 1em;
+	margin: auto;
+	width: max-content;
+}
+
+.journal-hero-images img {
+	border:none !important;
+}
+
+.journal-hero-title {
+	color: var(--nlb-red) !important;
+	font-family: 'PPM Extended Black', monospace !important;
+	font-size: var(--nlb-title-size) !important;
+	font-weight: bold !important;
+	margin-bottom: 0;
+	line-height: 1;
+	text-transform: uppercase !important;
+}
+
+.journal-subheader{
+	color: var(--nlb-red);
+	font-weight: bold;
+}
+

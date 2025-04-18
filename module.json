@@ -1,0 +1,24 @@
+{
+    "id": "n1ght0wls_little_bits",
+    "title": "n1ght0wls Little Bits",
+    "version": "0.1",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "12.331"
+    },
+    "authors": [
+        {
+            "name": "TaureHorn",
+            "url": "https://github.com/TaureHorn",
+            "flags": {}
+        }
+    ],
+    "description": "Just a bunch of disconnected stuff I've built that requires a module",
+    "esmodules": [
+        "n1ght0wls_little_bits.js"
+    ],
+    "styles": [
+        "n1ght0wls_little_bits.css"
+    ],
+    "socket": true
+}
