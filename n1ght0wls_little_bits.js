@@ -22,11 +22,9 @@ Hooks.on('init', function() {
         ],
         onDown: () => {
             if (game.modules.get('levels')?.active) {
-                const levels = new LevelsUI()
-
                 $('#levelsUI').length > 0 
                     ? Object.values(ui.windows).find(obj => obj.options.id === 'levelsUI').close()
-                    : levels.render(true)
+                    : CONFIG.Levels.UI.render(true)
             }
         },
     })
