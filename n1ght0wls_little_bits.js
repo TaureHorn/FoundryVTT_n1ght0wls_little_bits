@@ -9,6 +9,31 @@ class NLB {
 
 console.log(`${NLB.id}: module init`)
 
+Hooks.on('init', function() {
+
+    // register keybind to launch Levels UI
+    game.keybindings.register(NLB.id, 'launchLevels', {
+        name: "Launch levels UI",
+        hint: "Opens the scenes UI for the levels modules",
+        editable: [
+            {
+                key: "KeyF2",
+            }
+        ],
+        onDown: () => {
+            if (game.modules.get('levels')?.active) {
+                const levels = new LevelsUI()
+
+                $('#levelsUI').length > 0 
+                    ? Object.values(ui.windows).find(obj => obj.options.id === 'levelsUI').close()
+                    : levels.render(true)
+            }
+        },
+    })
+
+})
+
+
 Hooks.once('ready', async function() {
 
     // set up custom Hooks
